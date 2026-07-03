@@ -4,6 +4,14 @@
   --rgb: 234,154,151;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg:  #1d1015;
+    --ph:  #ea9a97;
+    --rgb: 234,154,151;
+  }
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body, #root {
