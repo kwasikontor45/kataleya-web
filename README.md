@@ -1,16 +1,22 @@
-# React + Vite
+# kataleya-web — RETIRED (2026-07-06)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This repo was a working prototype (onboarding → journal → PIN-gated
+clinician view, all localStorage-only) built July 2–3, 2026. It was
+never connected to the main Kataleya effort and became an undiscovered
+duplicate: a second live "Kataleya" web app at a second domain, built
+without the rest of the project's design language, philosophy work,
+or ongoing attention.
 
-Currently, two official plugins are available:
+**Single source of truth going forward:** kontor.studio/kataleya-demo/
+(repo: `kwasikontor45/kontor-studio`, path `kataleya-demo/`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The one genuinely good idea in here — a patient-set PIN that gates a
+diagnostic view so they can deliberately show a clinician their real
+progress — has been ported over there, reusing the demo's own real
+data (the "mirror" screen) instead of a separate duplicate view. See
+`kataleya-demo/index.html`'s `clinician_pin_hash` / mirror-gate logic,
+and settings screen's "clinician PIN" field.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This repo is archived, not deleted, so the history isn't lost. The
+`kataleya.kontor.studio` domain has been detached — nothing is served
+there anymore.
